@@ -1,0 +1,24 @@
+p.highlight {
+    color: lightblue;
+    font-size: 30px;
+}
+
+div#special {
+    background-color: orange;
+    padding: 10px;
+}
+
+input[type="text"] {
+    border-color: orange;
+    padding: 10px;
+}
+
+.weight, .style {
+    font-style: italic;
+    font-weight: bold;
+}
+
+a.softuni:hover {
+    color: orange;
+    text-decoration: line-through;
+}
