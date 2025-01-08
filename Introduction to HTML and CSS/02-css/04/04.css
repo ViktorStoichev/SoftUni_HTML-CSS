@@ -1,0 +1,38 @@
+nav a {
+    text-decoration: none;
+}
+
+strong {
+    color: red;
+    font-weight: bolder;
+}
+
+div > section {
+    background-color: aliceblue;
+}
+
+div.firstDes > section {
+    background-color: aquamarine;
+}
+
+ul > li > img {
+    border: 10px solid red;
+}
+
+input {
+    border-color: blueviolet;
+}
+
+input[type="text"].firstInput {
+    border-color: orange;
+}
+
+article:hover {
+    border: solid 2px red;
+}
+
+#info::before {
+    content: "→ ";
+    color: red;
+    font-size: 20px;
+}
