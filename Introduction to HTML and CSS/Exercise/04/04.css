@@ -1,0 +1,12 @@
+header + p {
+    color: grey;
+}
+
+time {
+    font-style: italic;
+}
+
+span {
+    font-weight: bold;
+    font-style: normal;
+}
