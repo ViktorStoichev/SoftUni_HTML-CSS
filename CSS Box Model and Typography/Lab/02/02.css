@@ -1,0 +1,15 @@
+div {
+    border: 2px solid black;
+}
+
+.uniform {
+    padding: 20px;
+}
+
+.non-uniform {
+    padding: 10px 30px 20px 40px; /* (Top Right Bottom Left) */
+}
+
+.percentage {
+    padding: 5%;
+}
