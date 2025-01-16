@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Helvetica, sans-serif;
+    margin: 0 10px;
+}
+
+p, ul, ol {
+    padding-bottom: 1.5rem;
+}
+
+ol, ul {
+    padding-left: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+    font-family: Georgia;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+blockquote, table {
+    margin: 20px 0;
+}
+
+blockquote {
+    margin-left: 50px;
+    border-left: 4px solid #999;
+    padding-left: 50px;
+}
+
+blockquote .koko {
+    text-align: end;
+}
+
+table {
+    width: 100%;
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #999;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(255, 250, 235);
+}
+
+th, td {
+    border: 1px solid grey;
+    width: 33%;
+    padding: 5px;
+}
