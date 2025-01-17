@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font: 24px/1.5 Georgia, serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    border: 3px solid green;
+    margin: 1em;
+    padding: 1em;
+}
+
+section, footer {
+    border: 3px solid black;
+    padding: 1.5em;
+}
+
+footer, section:not(:first-child) {
+    margin-top: 1em;
+}
+
+div {
+    border: 3px solid blue;
+    padding: 1em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer {
+    margin-bottom: 1em;
+}
