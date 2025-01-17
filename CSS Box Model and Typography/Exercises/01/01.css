@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+div {
+    border: 1px solid grey;
+    padding: 2em;
+    position: relative;
+}
+
+p {
+    position: absolute;
+    top: 1px;
+    left: 10px;
+}
+
+.margin {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: lightsalmon;
+}
+
+.border {
+    background: lightgoldenrodyellow;
+}
+
+.padding {
+    background: lightgreen;
+}
+
+.content {
+    background: lightblue;
+    text-align: center;
+}
