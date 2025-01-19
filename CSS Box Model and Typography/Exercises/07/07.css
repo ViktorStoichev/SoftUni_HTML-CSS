@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font: 20px/1.5 Verdana, sans-serif;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+div {
+    margin: 1em;
+}
+
+i {
+    border: 30px solid lightgray;
+    background-color: lightgray;
+    border-radius: 60px;
+    margin-top: 10px;
+}
+
+i:not(:first-of-type) {
+    margin-left: 1em;
+}
