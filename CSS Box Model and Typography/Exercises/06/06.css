@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font: 24px/1.4 Arial, sans-serif;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+details {
+    border: 2px solid lightgrey;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-bottom: none;
+}
+
+details:last-of-type {
+    border-bottom: 2px solid lightgrey;
+}
+
+details:first-child {
+    margin-top: 2rem;
+}
+
+summary {
+    font-size: 1.2rem;
+    font-weight: bold;
+    list-style-type: '>  ';
+}
+
+p {
+    font-size: 0.8rem;
+    margin: 0.8rem 0;
+}
+
+details[open] > summary {
+    list-style-type: 'v  ';
+}
