@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font: clamp(12px, 2vw, 20px)/1.4 Helvetica, serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+div {
+    padding: 1em;
+}
+
+a, button {
+    font: inherit;
+    border: 1px solid lightgrey;
+    padding: 1em 1.4em;
+    margin: 0.5em;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: lightyellow;
+}
+
+.white {
+    background-color: white;
+}
+
+a:first-of-type,
+button:first-of-type,
+a:last-of-type,
+button:last-of-type {
+    background-color: lightgrey;
+}
+
+i {
+    margin-right: 4px;
+}
