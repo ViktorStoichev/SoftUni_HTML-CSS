@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font: clamp(10px, 2vw, 20px)/1.4 Arial, sans-serif;
+    background-color: rgb(252, 236, 234);
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.container {
+    background-color: white;
+    max-width: 90%;
+    padding: 2em;
+    box-shadow: 0 0 3px 3px rgb(0, 0, 0, 20%);
+    border-radius: 4px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.law-container {
+    display: flex;
+}
+
+.laws {
+    padding: 1em;
+    margin: 1em;
+}
+
+.laws p {
+    margin-top: 0;
+}
+
+.container > p {
+    color: grey;
+    max-width: 66ch;
+    text-align: center;
+}
+
+.container p:last-of-type {
+    max-width: 90ch;
+}
+
+.container p:first-of-type {
+    margin-bottom: 2em;
+}
+
+hr {
+    width: 8em;
+    color: lightgray;
+}
+
+p {
+    margin: 1em 0;
+}
+
+.italic {
+    font-style: italic;
+}
