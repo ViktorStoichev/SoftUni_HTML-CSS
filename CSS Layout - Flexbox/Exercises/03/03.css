@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font: clamp(8px, 2vw, 16px)/1.4 Verdana, serif;
+    background-color: rgb(221, 215, 215);
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3em;
+    text-align: center;
+    padding: 0.2em;
+    border-radius: 0.5em;
+}
+
+.container div:not(.workweek, .weekend) {
+    border: 1px solid lightgray;
+    padding: 1em;
+}
+
+main, aside {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+}
+
+main {
+    flex-grow: 2;
+}
+
+aside {
+    flex-grow: 1;
+}
+
+.workweek, .weekend {
+    display: flex;
+}
+
+.workweek div, .weekend div, aside div {
+    flex-grow: 1;
+}
