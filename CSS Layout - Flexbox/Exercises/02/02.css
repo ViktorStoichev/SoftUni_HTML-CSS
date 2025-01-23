@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    background-color: rgb(221, 215, 215);
+    font: clamp(10px, 2vw, 16px)/1.4 Verdana, serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    width: 85%;
+    padding: 1.5em;
+    margin: 0 auto;
+    margin-top: 3em;
+    background-color: white;
+    border-radius: 0.3em;
+    box-shadow: 0 0 3px 3px rgb(0, 0, 0, 0.2);
+}
+
+header, footer, main, aside{
+    border: 2px solid gray;
+    border-radius: 0.3em;
+    padding: 2em;
+    margin: 0.5em 0;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+}
+
+.main-content main {
+    flex-grow: 2;
+}
+
+.main-content aside {
+    flex-grow: 1;
+}
+
+.first main {
+    margin-right: 1em;
+}
+
+.second main {
+    margin-left: 1em;
+}
