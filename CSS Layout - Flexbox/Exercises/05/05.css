@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font: clamp(10px, 2vw, 20px)/1.4 Arial, serif;
+    background-color: rgb(220, 220, 220);
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2em;
+    gap: 2em;
+}
+
+.container div {
+    border: 5px solid black;
+    background-color: white;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    margin-top: 1em;
+    color: gray;
+    font-style: italic;
+}
