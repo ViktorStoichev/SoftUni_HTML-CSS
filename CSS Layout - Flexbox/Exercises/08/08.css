@@ -1,0 +1,110 @@
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyboard {
+    background-color: rgb(199, 199, 199);
+    padding: 1rem;
+    border-radius: 1rem;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 3px solid gray;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+section button {
+    flex-grow: 1;
+    border-radius: 0.2rem;
+}
+
+.first-row button {
+    padding: 0.5rem 1rem;
+    box-shadow: 0 0.2em 0.2em 0 rgb(0, 0, 0, 0.5);
+}
+
+.second-row button,
+.third-row button,
+.fourth-row button,
+.fifth-row button {
+    padding: 0.8rem 0.1rem;
+    box-shadow: 0 0.2em 0.2em 0 rgb(0, 0, 0, 0.5);
+}
+
+.second-row button:not(:last-of-type),
+.third-row button:not(:last-of-type, :first-of-type),
+.fourth-row button:not(:first-of-type),
+.fifth-row button:not(:last-of-type, :first-of-type) {
+    background-color: white;
+}
+
+.third-row button:first-of-type, .third-row button:last-of-type {
+    padding: 0.8rem 0.5rem;
+}
+
+.fourth-row button:last-of-type {
+    margin-right: 4rem;
+}
+
+.enter {
+    position: relative;
+    background-color: rgb(232, 233, 237);
+}
+
+.enter::after {
+    content: "";
+    background-color: rgb(232, 233, 237);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 90%;
+    width: 70%;
+    height: 150%;
+    box-shadow: 0.2em 0.2em 0.1em 0 rgb(0, 0, 0, 0.5);
+    border-top: none;
+}
+
+.enter:hover::after {
+    content: "";
+    background-color: rgb(211, 214, 219);
+}
+
+.enter:hover {
+    background-color: rgb(211, 214, 219);
+}
+
+.enter:active::after {
+    content: "";
+    background-color: rgb(190, 193, 197);
+}
+
+.enter:active {
+    background-color: rgb(190, 193, 197);
+}
+
+.fifth-row button:last-of-type {
+    width: 11%;
+}
+
+.sixth-row button {
+    padding: 0.8rem;
+    box-shadow: 0 0.2em 0.2em 0 rgb(0, 0, 0, 0.5);
+}
+
+.space {
+    flex-grow: 12;
+    background-color: white;
+}
