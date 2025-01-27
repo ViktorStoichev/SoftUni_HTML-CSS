@@ -1,0 +1,3 @@
+html {
+    font: clamp(8px, 2vw, 20px)/1.4 Arial, serif;
+}
