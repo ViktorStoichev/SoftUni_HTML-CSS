@@ -1,0 +1,87 @@
+html {
+    background-color: lightgray;
+}
+
+body {
+    display: flex;
+    gap: 2em;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 15rem;
+    padding: 3em;
+}
+
+.vertical, article {
+    background-color: white;
+    padding: 3em 2em;
+}
+
+.horizontal {
+    flex: 0 1 70%;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+article + article {
+    margin-top: 2em;
+}
+
+.vertical {
+    flex: 0 1 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.vertical .avatar {
+    width: 6em;
+}
+
+.avatar {
+    flex-shrink: 0;
+    width: 10rem;
+    aspect-ratio: 1/1;
+    background-color: green;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
+}
+
+.text-content::before {
+    content: '"';
+    font-size: 6em;
+    line-height: 0.5;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+@media (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+
+    .vertical {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .vertical .avatar {
+        width: 10em;
+    }
+}
+
+@media (max-width: 600px) {
+    .vertical, article {
+        flex-direction: column;
+    }
+
+    .avatar, .vertical .avatar {
+        width: 20em;
+    }
+}
