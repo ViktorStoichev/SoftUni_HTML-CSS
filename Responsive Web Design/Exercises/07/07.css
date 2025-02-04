@@ -1,0 +1,63 @@
+html {
+    background-color: lightgray;
+}
+
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    background-color: white;
+    width: 85%;
+    margin-top: 2rem;
+    display: flex;
+    padding: 1em;
+    gap: 2em;
+}
+
+article, .picture, button {
+    border-radius: 0.5em;
+}
+
+.content {
+    flex: 0 1 70%;
+}
+
+.picture {
+    flex: 0 1 30%;
+    background-color: lightgray;
+    border: 1px solid grey;
+}
+
+h3 {
+    color: grey;
+}
+
+button {
+    padding: 1em 2em;
+    font-weight: bold;
+}
+
+.chat-btn {
+    background-color: blueviolet;
+    color: white;
+    margin-right: 1em;
+}
+
+.learn-btn {
+    color: gray;
+}
+
+@media (max-width: 800px) {
+    article {
+        flex-direction: column;
+    }
+
+    .picture {
+        order: -1;
+        min-height: 10em;
+    }
+}
