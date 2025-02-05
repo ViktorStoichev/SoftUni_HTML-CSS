@@ -1,0 +1,63 @@
+html {
+    background-color: lightgray;
+}
+
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    background-color: white;
+    max-width: 800px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+hr {
+    width: 5.5em;
+    color: lightgray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, button {
+    padding: 1em;
+    width: 30em;
+    border-radius: 0.3em;
+}
+
+input {
+    border: 1px solid grey;
+}
+
+div.label {
+    display: flex;
+    justify-content: space-between;
+}
+
+label::after {
+    content: '*';
+    color: red;
+    margin-left: 0.3em;
+}
+
+button {
+    background-color: rgb(255, 153, 0);
+    color: white;
+    border: none;
+}
+
+.example {
+    color: grey;
+    font-style: italic;
+    font-size: 0.8em;
+}
