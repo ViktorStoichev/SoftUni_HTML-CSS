@@ -1,0 +1,71 @@
+html {
+    background-color: lightgray;
+}
+
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    background-color: white;
+    max-width: 800px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+article, fieldset, button {
+    border-radius: 0.3em;
+}
+
+fieldset {
+    padding: 3rem 2rem;
+    border: 3px solid lightgray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+legend {
+    padding: 0 1em;
+}
+
+label, fieldset {
+    color: rgb(75, 75, 75);
+}
+
+button {
+    padding: 1em;
+    width: 100%;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid lightgray;
+}
+
+input[type="date"] {
+    padding: 1em 0;
+}
+
+button {
+    background-color: lightgray;
+    color: black;
+    font-weight: bold;
+    border: none;
+    margin-top: 2em;
+}
+
+.example {
+    color: grey;
+    font-style: italic;
+    font-size: 0.8em;
+    margin-top: 1em;
+}
